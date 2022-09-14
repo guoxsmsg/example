@@ -1,0 +1,34 @@
+<project 
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<parent>
+		<groupId>com.example.demo</groupId>
+		<artifactId>example-demo</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>example-demo-auth</artifactId>
+	<name>example-demo-config</name>
+	<description>example-demo-auth</description>
+	
+	<properties>
+		<example.demo.commons.version>1.0-SNAPSHOT</example.demo.commons.version>
+		<lombok.version>1.18.24</lombok.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.example.demo</groupId>
+			<artifactId>example-demo-commons</artifactId>
+			<version>${example.demo.commons.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>
